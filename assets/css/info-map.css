@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+#info section.full{
+  background-color: var(--white);
+}
+
+#info .sub-title{
+  text-align: center;
+}
+
+#info .cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+#info .card{
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--boxShadow);
+}
+#info .card img{
+  height: 200px;
+  object-fit: cover;
+}
+#info .card .desc{
+  padding: 20px;
+}
+#info .card .desc h4{
+  font-weight: 700;
+}
+#info .card .desc p{
+  color: var(--gray);
+}
