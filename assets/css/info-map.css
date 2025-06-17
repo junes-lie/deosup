@@ -4,7 +4,7 @@
   background-color: var(--white);
 }
 
-#info .sub-title{
+#info .max-title{
   text-align: center;
 }
 
@@ -12,7 +12,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 100px;
 }
 #info .card{
   border-radius: 20px;
