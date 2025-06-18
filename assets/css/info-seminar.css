@@ -51,7 +51,7 @@
   display: block;
   width: 200px;
   height: 200px;
-  border-radius: 10px;
+  border-radius: var(--radius);
 }
 #seminar .room-info .room-text{
   padding: 20px 10px;

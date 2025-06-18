@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>문화재단 안내</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/info-found.css">
 </head>
@@ -25,9 +26,9 @@
         더숲안내
       </div>
       <div class="menu">
-        <a href="info-map.html" class="active">오시는 길</a>
+        <a href="info-map.html">오시는 길</a>
         <a href="info-seminar.html">세미나룸</a>
-        <a href="info-found.html">문화재단</a>
+        <a href="info-found.html" class="active">문화재단</a>
       </div>
     </div>
   </header>
@@ -97,12 +98,108 @@
         </div class="business-text">
       </div>
     </section>
-    <section>
-      
+    <section class="deosuptv full">
+      <h2>더숲TV</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="video-wrap">
+                <iframe width="388" height="200" src="https://www.youtube.com/embed/XPjIwPice9E?si=k5TWrA58h-acXP8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="desc">
+                <h4>
+                  더숲 (노원역 주변 복합문화공간) - 베이커리, 브런치 카페, 예술영화관, 갤러리, 서점, 와인바, 세미나룸
+                </h4>
+                <p>2022. 1. 13.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="video-wrap">
+                <iframe width="388" height="200" src="https://www.youtube.com/embed/WNtN1zeIiyE?si=v7liGrpJ0vV8sjcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="desc">
+                <h4>
+                  인왕산 초소책방을 소개합니다(적극행정 국무총리상 수상)
+                </h4>
+                <p>2020. 11. 23.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="video-wrap">
+                <iframe width="388" height="200" src="https://www.youtube.com/embed/6LaKMkvaJOw?si=x5_JYkTqQi8TkJKU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="desc">
+                <h4>
+                  마을이 실체가 되는 [마을교육공동체]
+                </h4>
+                <p>2018. 11. 29.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="found-info full">
+      <h2>재단 정보</h2>
+      <dl class="info">
+        <div>
+          <dt>설립연도</dt>
+          <dd>2006년 (재단법인 교육과 미래)</dd>
+          <dd>2020년 '더숲문화재단'으로 법인명 및 성격 전환</dd>
+        </div>
+        <div>
+          <dt>법인등록번호</dt>
+          <dd>264322-0004010</dd>
+        </div>
+        <div>
+          <dt>고유번호증상 주소</dt>
+          <dd>서울특별시 노원구 동일로 1384 B1<br>
+            (상계6단지 602동상가)</dd>
+        </div>
+        <div>
+          <dt>대표자</dt>
+          <dd>탁무권</dd>
+        </div>
+        <div>
+          <dt>이메일</dt>
+          <dd>nowonmungo1@hanmail.net</dd>
+        </div>
+      </dl>
+    </section>
+    <section class="doc">
+      <div class="corp">
+        <h2>법인 정보 및 등록서류</h2>
+        <ul>
+          <li>
+            <h5>정관<i class="fa-solid fa-arrow-right"></i></h5>
+            <i class="fa-solid fa-file-pdf"></i>
+          </li>
+          <li>
+            <h5>법인 고유번호증<i class="fa-solid fa-arrow-right"></i></h5>
+            <i class="fa-solid fa-file-pdf"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="disclosure">
+        <h2>공시자료</h2>
+        <ul>
+          <li>
+            <h5>2024</h5>
+            <p>기부금활용명세서</p>
+            <i class="fa-solid fa-file-pdf"></i>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   
-    <footer class="footer">
+  <footer class="footer">
     <nav class="footer-nav">
       <a href="culture-anyway.html" class="nav-item">
         <div class="nav-icon">
@@ -138,6 +235,17 @@
       </a>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 
 </body>
 </html>
