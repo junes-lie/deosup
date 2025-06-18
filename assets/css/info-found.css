@@ -59,10 +59,6 @@
 #foundation .business1::before{
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url(../image/business1.jpg) no-repeat center/cover;
 }
-#foundation .business:nth-of-type(odd)::before{
-  transform: scaleX(-1);
-}
-
 #foundation .business2::before{
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url(../image/21.jpg) no-repeat center 85%/cover;
 }
@@ -72,7 +68,9 @@
 #foundation .business4::before{
   background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url(../image/business4.jpg) no-repeat center 65%/cover;
 }
-
+#foundation .business:nth-of-type(odd)::before{
+  transform: scaleX(-1);
+}
 #foundation .business:nth-of-type(even){
   text-align: right;
 }

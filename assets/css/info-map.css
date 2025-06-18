@@ -4,9 +4,6 @@
   background-color: var(--white);
 }
 
-#info .max-title{
-  text-align: center;
-}
 
 #info .cards{
   display: flex;
