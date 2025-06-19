@@ -6,14 +6,15 @@
 
 
 #info .cards{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* gap: 30px; */
 }
 #info .card{
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
+  margin-bottom: 30px;
 }
 #info .card::before{
   content: '';
