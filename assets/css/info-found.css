@@ -12,8 +12,9 @@
 }
 #foundation .top-visu::before{
   content: '';
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
+  /* height: 100%; */
+  inset: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -86,7 +87,7 @@
 }
 
 /* 더숲티비 */
-#foundation section.full{
+#foundation .deosuptv{
   padding: 25px 0;
 }
 #foundation .deosuptv h2{
@@ -95,7 +96,7 @@
 
 #foundation .deosuptv .swiper-slide {
   /* border: 1px solid blue; */
-  padding: 20px;
+  padding: 30px 20px;
 }
 #foundation .deosuptv .card{
   /* border: 1px solid red; */
@@ -128,6 +129,7 @@
 /* 재단정보 */
 #foundation .found-info{
   background-color: var(--background);
+  padding: 25px 0;
 }
 
 #foundation .found-info h2{
@@ -136,12 +138,12 @@
 
 #foundation .found-info dl{
   background-color: var(--white);
-  padding: 50px 20px;
+  padding: 30px 20px;
   line-height: 150%;
 }
 #foundation .found-info dl dt{
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #foundation .found-info dl div{
   margin-bottom: 20px;
@@ -151,3 +153,37 @@
 }
 
 /* 서류 */
+
+#foundation .doc li{
+  padding: 20px;
+  border-top: 1px solid var(--lightgray);
+}
+#foundation .doc li:hover{
+  background-color: var(--background);
+}
+#foundation .doc li a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#foundation .doc .corp li:last-of-type,
+#foundation .doc .disclosure li:last-of-type{
+  border-bottom: 1px solid var(--lightgray);
+}
+
+#foundation .doc h5{
+  font-weight: 700;
+  display: inline-block;
+}
+#foundation .doc .fa-file-pdf{
+  color: #EF5350;
+}
+
+#foundation .doc .disclosure{
+  margin-top: 50px;
+}
+#foundation .doc .disclosure h5{
+  
+  width: 70px;
+  color: var(--primaryColor);
+}

@@ -37,16 +37,12 @@
   flex-direction: column;
   /* gap: 20px; */
 }
-#seminar .room-info .room-wrap{
+#seminar .room-info .swiper{
+  overflow: hidden;
+}
+#seminar .room-info .swiper-wrapper{
   display: flex;
-  gap: 20px;
-  overflow-x: auto;
 }
-#seminar .room-info .room-wrap::-webkit-scrollbar{
-  display: none;
-}
-
-
 #seminar .room-info img{
   display: block;
   width: 200px;

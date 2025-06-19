@@ -15,20 +15,27 @@ header{
 /* 메인메뉴 */
 header .main-menu{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 428px;
   height: 45px;
   padding: 0 20px;
-  gap: 163px;
 }
 header .main-menu button{
   background-color: transparent;
   outline: none;
   cursor: pointer;
 }
-header .logo{
+
+header .logo img{
   width: 50px;
+}
+header .back img{
+  width: 10px;
+}
+header .main-menu p img{
+  width: 10px;
+  opacity: 0;
 }
 
 

@@ -17,11 +17,13 @@
       <a class="logo" href="index.html">
         <img src="assets/image/logo-w.png" alt="로고">
       </a>
-      <p></p>
+      <p>
+        <img src="assets/image/gotolink.png" alt="">
+      </p>
     </div>
     <div class="sub-menu">
       <div class="nav">
-        <img src="assets/image/icon_house2.png" alt="홈">
+        <img src="assets/image/icon-the-forest-active.png" alt="홈">
         <span></span>
         더숲안내
       </div>
@@ -48,7 +50,7 @@
         <p class="time"><i class="fa-solid fa-clock"></i>10 am ~ 10 pm / 연중무휴</p>
         <p class="price"><i class="fa-solid fa-won-sign"></i>사전예약 - 2,500원 / 30분 (최대 4시간)</p>
       </div>
-      <a href="" class="btn">예약하기</a>
+      <a href="https://booking.naver.com/booking/10/bizes/1075277" class="btn">예약하기</a>
     </section>
     <section class="icons">
       <div class="icon">
@@ -68,33 +70,35 @@
     </section>
     <section class="room-info">
       <h4>룸이용안내</h4>
-      <div class="room-wrap">
-        <div class="room">
-          <img src="assets/image/seminar-room1.png" alt="">
-          <div class="room-text">
-            <h6>Room1</h6>
-            <p>3인 ~ 8인</p>
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="room swiper-slide">
+            <img src="assets/image/seminar-room1.png" alt="">
+            <div class="room-text">
+              <h6>Room1</h6>
+              <p>3인 ~ 8인</p>
+            </div>
           </div>
-        </div>
-        <div class="room">
-          <img src="assets/image/seminar-room2.png" alt="">
-          <div class="room-text">
-            <h6>Room2</h6>
-            <p>2인 ~ 6인</p>
+          <div class="room swiper-slide">
+            <img src="assets/image/seminar-room2.png" alt="">
+            <div class="room-text">
+              <h6>Room2</h6>
+              <p>2인 ~ 6인</p>
+            </div>
           </div>
-        </div>
-        <div class="room">
-          <img src="assets/image/seminar-room3.png" alt="">
-          <div class="room-text">
-            <h6>Room3</h6>
-            <p>2인 ~ 6인</p>
+          <div class="room swiper-slide">
+            <img src="assets/image/seminar-room3.png" alt="">
+            <div class="room-text">
+              <h6>Room3</h6>
+              <p>2인 ~ 6인</p>
+            </div>
           </div>
-        </div>
-        <div class="room">
-          <img src="assets/image/seminar-room4.png" alt="">
-          <div class="room-text">
-            <h6>Room4</h6>
-            <p>4인 ~ 12인</p>
+          <div class="room swiper-slide">
+            <img src="assets/image/seminar-room4.png" alt="">
+            <div class="room-text">
+              <h6>Room4</h6>
+              <p>4인 ~ 12인</p>
+            </div>
           </div>
         </div>
       </div>
@@ -166,6 +170,15 @@
       </a>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+    });
+  </script>
 
 </body>
 </html>
