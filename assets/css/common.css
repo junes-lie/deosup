@@ -1,5 +1,5 @@
 @charset "utf-8"; 
-
+html{scroll-behavior: smooth;}
 :root{
   --black: #121212;
 	--gray: #666;
@@ -78,7 +78,7 @@ a{
   padding: 50px 20px 20px 20px;
   width: 100%;
 }
-.max-title h3{
+.max-title h2{
   font-weight: 700;
   margin-bottom: 0px;
   display: flex;
@@ -139,3 +139,18 @@ a.btn:hover {
   background: #0a3a1f;
 }
   
+
+/* 탑버튼 */
+.top{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--background);
+  color: var(--primaryColor);
+  z-index: 888;
+  position: fixed;
+  bottom: 8%;
+  right: 3%;
+  text-align: center;
+  line-height: 50px;
+}

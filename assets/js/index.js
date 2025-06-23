@@ -1,5 +1,6 @@
 // 바꾸고 싶은 이미지 경로 리스트
 const images = [
+  'assets/image/5.jpg',
   'assets/image/8.jpg',
   'assets/image/9.jpg',
   'assets/image/2.jpg',
@@ -43,3 +44,22 @@ setInterval(() => {
     current = next;
   }, 1500); // fade 시간과 동일하게
 }, 4000); // 4초마다 반복
+
+
+
+// 스크롤 애니메이션
+document.addEventListener('DOMContentLoaded', function () {
+  const elements = document.querySelectorAll('.fade-up');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  }, {
+    threshold: 1
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
