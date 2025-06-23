@@ -78,7 +78,7 @@ a{
   padding: 50px 20px 20px 20px;
   width: 100%;
 }
-.max-title h2{
+.max-title h3{
   font-weight: 700;
   margin-bottom: 0px;
   display: flex;
@@ -141,16 +141,24 @@ a.btn:hover {
   
 
 /* 탑버튼 */
-.top{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--background);
-  color: var(--primaryColor);
+#gototop{
   z-index: 888;
   position: fixed;
-  bottom: 8%;
-  right: 3%;
-  text-align: center;
-  line-height: 50px;
+  bottom: 75px;
+  width: 100%;
+  max-width: 428px;
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+}
+.top{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
