@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>소전미술관 안내</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/info-deosup.css">
 </head>
@@ -36,8 +37,14 @@
 
   <main>
     <section class="full">
-      <div class="sub-visu">
-        <img src="assets/image/sojeon.jpg" alt="더숲소전미술관">
+      <div class="sub-visu swiper sojeon-swiper">
+        <div class="swiper-wrapper">
+          <img src="assets/image/sojeon1.jpg" alt="더숲소전미술관" class="swiper-slide visu1">
+          <img src="assets/image/sojeon2.jpg" alt="더숲소전미술관" class="swiper-slide visu2">
+          <img src="assets/image/sojeon3.jpeg" alt="더숲소전미술관" class="swiper-slide visu3">
+          <img src="assets/image/sojeon4.jpeg" alt="더숲소전미술관" class="swiper-slide visu4">
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="main-desc">
@@ -109,9 +116,18 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
   <script charset="UTF-8">
+
+    var swiper = new Swiper(".sojeon-swiper", {
+      pagination: {
+        el: ".sojeon-swiper .swiper-pagination",
+      },
+      loop: true,
+    });
+
     new daum.roughmap.Lander({
       "timestamp" : "1750612676475",
       "key" : "4zkr6eg3otr",

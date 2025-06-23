@@ -22,6 +22,42 @@
   display: none;
 }
 
+#cultureplex .sub-visu .swiper-pagination-bullet-active ,
+#choso .sub-visu .swiper-pagination-bullet-active ,
+#sojeon .sub-visu .swiper-pagination-bullet-active {
+  background: var(--primaryColor);
+}
+
+/* 사진 위치조정 */
+#cultureplex .sub-visu .visu3{
+  object-position: 50% 40%;
+}
+#cultureplex .sub-visu .visu4{
+  object-position: 50% 30%;
+}
+
+#choso .sub-visu .visu1{
+  object-position: 50% 40%;
+}
+#choso .sub-visu .visu5{
+  object-position: 50% 80%;
+}
+
+#sojeon .sub-visu .visu1{
+  object-position: 50% 35%;
+}
+#sojeon .sub-visu .visu2{
+  object-position: 50% 45%;
+}
+#sojeon .sub-visu .visu4{
+  object-position: 50% 55%;
+}
+
+
+
+
+
+
 #cultureplex .main-desc .title,
 #choso .main-desc .title,
 #sojeon .main-desc .title,

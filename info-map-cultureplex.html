@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>컬처플렉스 안내</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/info-deosup.css">
 </head>
@@ -36,8 +37,14 @@
 
   <main>
     <section class="full">
-      <div class="sub-visu">
-        <img src="assets/image/cultureplex.jpg" alt="더숲컬처플렉스">
+      <div class="sub-visu swiper cultureplex-swiper">
+        <div class="swiper-wrapper">
+          <img src="assets/image/cultureplex1.jpg" alt="더숲컬처플렉스" class="swiper-slide visu1">
+          <img src="assets/image/cultureplex2.jpg" alt="더숲컬처플렉스" class="swiper-slide visu2">
+          <img src="assets/image/cultureplex3.jpg" alt="더숲컬처플렉스" class="swiper-slide visu3">
+          <img src="assets/image/cultureplex4.jpeg" alt="더숲컬처플렉스" class="swiper-slide visu4">
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="main-desc">
@@ -151,9 +158,18 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
   <script charset="UTF-8">
+
+    var swiper = new Swiper(".cultureplex-swiper", {
+      pagination: {
+        el: ".cultureplex-swiper .swiper-pagination",
+      },
+      loop: true,
+    });
+
     new daum.roughmap.Lander({
       "timestamp" : "1750611420862",
       "key" : "4zk3ryxjhiu",
@@ -163,6 +179,7 @@
     window.addEventListener('resize', function() {
       map.relayout();
     });
+
   </script>
 </body>
 </html>
