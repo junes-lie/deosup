@@ -25,10 +25,12 @@
     </div>
   </header>
 
-    <!-- 탑버튼 -->
-  <a class="top" href="#">
-    <i class="fa-solid fa-arrow-up"></i>
-  </a>
+  <!-- 탑버튼 -->
+  <div id="gototop">
+    <a class="top" href="#">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </div>
 
   <main>
     <!-- 메인비주얼 -->
@@ -43,21 +45,21 @@
     <!-- 더숲 -->
     <section class="about">
       <div class="about-title fade-up">
-        <p>about</p>
+        <p>About</p>
         <h2>deosup</h2>
       </div>
       <div class="about-set">
         <div class="about-item fade-up">
           <img src="assets/image/23.png" alt="사진">
-          책과 영화와 <br> 미술이 있는
+          <p>책과 영화와 <br> 미술이 있는</p>
         </div>
         <div class="about-item fade-up">
-          빵과 와인과 <br> 파스타와 <br> 커피가 있는
+          <p>빵과 와인과 <br> 파스타와 <br> 커피가 있는</p>
           <img src="assets/image/24.png" alt="사진">
         </div>
         <div class="about-item fade-up">
           <img src="assets/image/2.jpg" alt="사진">
-          하루하루 새로운 컬처플렉스 <br> 더숲
+          <p>하루하루 새로운 컬처플렉스 <br> 더숲</p>
         </div>
       </div>
     </section>
@@ -76,50 +78,52 @@
           <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
-      <div class="culture-title fade-up">
-        <h2>더숲, 이달의 프로그램</h2>
-        <span>더숲에서 진행하는 활동에 참여해보세요</span>
-      </div>
-      <div class="swiper mySwiper fade-up">
-        <div class="swiper-wrapper program-card-list">
-          <div class="swiper-slide program-card">
-            <a href="culture-landing02.html">
-              <img class="program-img" src="assets/image/anyway4.png" alt="프로그램포스터">
-            <div class="program-text">
-              <h6>
-                [기획전] <br>
-                제25회 한국퀴어영화제
-              </h6>
-              <p>더숲아트시네마</p>
-              <p>2025.06.20 ~ 06.22</p>
+      <div class="culture-wrap">
+        <div class="culture-title fade-up">
+          <h2>더숲, 이달의 프로그램</h2>
+          <span>더숲에서 진행하는 활동에 참여해보세요</span>
+        </div>
+        <div class="swiper mySwiper fade-up">
+          <div class="swiper-wrapper program-card-list">
+            <div class="swiper-slide program-card">
+              <a href="culture-landing02.html">
+                <img class="program-img" src="assets/image/anyway4.png" alt="프로그램포스터">
+              <div class="program-text">
+                <h6>
+                  [기획전] <br>
+                  제25회 한국퀴어영화제
+                </h6>
+                <p>더숲아트시네마</p>
+                <p>2025.06.20 ~ 06.22</p>
+              </div>
+              </a>
             </div>
-            </a>
-          </div>
-          <div class="swiper-slide program-card">
-            <a href="culture-landing02.html">
-              <img class="program-img" src="assets/image/academy1-1.png" alt="프로그램포스터">
-              <div class="program-text">
-                <h6>
-                  미야자키 하야오 <br>
-                  &lt;자연의 영혼> x &lt;지구 끝의 온실>
-                </h6>
-                <p>상주작가프로그램</p>
-                <p>2025.06.26</p>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide program-card">
-            <a href="culture-landing02.html">
-              <img class="program-img" src="assets/image/academy3-1.jpg" alt="프로그램포스터">
-              <div class="program-text">
-                <h6>
-                  우리는 서로를 펼치고 <br>
-                  유현아 x 권민경
-                </h6>
-                <p>낭독회</p>
-                <p>2025.06.27</p>
-              </div>
-            </a>
+            <div class="swiper-slide program-card">
+              <a href="culture-landing02.html">
+                <img class="program-img" src="assets/image/academy1-1.png" alt="프로그램포스터">
+                <div class="program-text">
+                  <h6>
+                    미야자키 하야오 <br>
+                    &lt;자연의 영혼> x &lt;지구 끝의 온실>
+                  </h6>
+                  <p>상주작가프로그램</p>
+                  <p>2025.06.26</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide program-card">
+              <a href="culture-landing02.html">
+                <img class="program-img" src="assets/image/academy3-1.jpg" alt="프로그램포스터">
+                <div class="program-text">
+                  <h6>
+                    우리는 서로를 펼치고 <br>
+                    유현아 x 권민경
+                  </h6>
+                  <p>낭독회</p>
+                  <p>2025.06.27</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -193,20 +197,19 @@
         </div>
       </div>
     </section>
-    
-    <section class="coffeebean-info full">
+
+    <section class="coffeebean-info">
       <h2 class="section-title fade-up">오직 더 숲에서,</h2>
         <img class="coffeebeans fade-up" src="assets/image/cafe/cafe/coffeebean.jpg" alt="">
-          <div class="max-title fade-up">
-            <h3>더숲 커피 오리지널 <em>200g</em></h3>
-            <h2>13,000</h2>
-            <p>드닐과 함께 개발한 더숲 시그니처 원두. 밀크초콜릿·카라멜 베이스에 은은한 오렌지 산미로 부드러운 데일리 커피입니다.</p>
+        <div class="sub-title fade-up">
+          <h4>더숲 커피 오리지널 <em>200g</em></h4>
+          <h5>13,000</h5>
+          <p>드닐과 함께 개발한 더숲 시그니처 원두. 밀크초콜릿·카라멜 베이스에 은은한 오렌지 산미로 부드러운 데일리 커피입니다.</p>
         </div>
     </section>
 
-
     <!-- 더숲안내 -->
-    <section class="deosup-info full division">
+    <section class="deosup-info full">
       <h2 class="fade-up">더숲이 만드는 공간</h2>
         <div class="deosup-place fade-up">
           <img src="assets/image/cultureplex1.jpg" alt="더숲컬처플렉스">

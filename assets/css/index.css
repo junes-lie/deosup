@@ -45,22 +45,6 @@ header .main-menu p img{
   opacity: 0;
 }
 
-/* 탑버튼 */
-.top{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: var(--background);
-  color: var(--primaryColor);
-  z-index: 888;
-  position: fixed;
-  bottom: 8%;
-  right: 3%;
-  text-align: center;
-  line-height: 50px;
-}
-
-
 /* 메인 비주얼 */
 #index main{
   margin: auto;
@@ -118,8 +102,8 @@ section.main-visu .main-text p{
   transform: translateY(0);
 } 
 
-/* about */
-.about{
+/* _____about_____ */
+.about-set{
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -131,38 +115,93 @@ section.main-visu .main-text p{
   text-align: center;
 }
 .about-title h2{
-  margin: 0;
+  margin: 0 0 30px;
 }
 .about-set{
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
 }
 .about-item{
   display: flex;
   justify-content: start;
-  align-items: self-end;
+  align-items: center;
   gap: 30px;
   padding: 0 20px;
 }
 .about-item img{
   width: 200px;
-  border-radius: 20px;
+  border-radius: 53% 47% 70% 30% / 30% 64% 36% 70%;
 }
 .about-item:nth-of-type(2){
   justify-content: end;
+  text-align: end;
+}
+.about-item:nth-of-type(2) img{
+  border-radius: 54% 46% 48% 52% / 45% 64% 36% 55%;
+}
+.about-item p{
+  font-weight: 600;
+  line-height: 1.4;
 }
 
+/* _____culture-info_____ */
+section.culture-info{
+  padding: 0px 0;
+}
+.culture-wrap{
+  padding-top: 50px;
+}
+.culture-info .culture-title{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.culture-info .culture-title h2{
+  margin-bottom: 10px;
+}
+.culture-info .culture-title span{
+  color: var(--gray);
+  font-weight: 300;
+}
+
+section.culture-info .swiper{
+  padding: 5px 20px 50px 20px;
+}
+
+.gotodeosup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 30px 0;
+  background-color: #fafafa;
+}
+.gotodeosup .deosup-set{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px
+}
+.gotodeosup .doesup-txt p{
+  font-size: 14px;
+  margin-top: 5px;
+}
+.gotodeosup .deosup-img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 
 /* _____movie-info_____ */
 .movie-info{
   text-align: center;
-  background-color: var(--background);
+  background-color: #fafafa;
 }
 
 .movie-info .section-title{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .movie-info .intro-text{
@@ -247,7 +286,7 @@ section.main-visu .main-text p{
   width: 170px;
   height: 170px;
   object-fit: contain;
-  border-radius: 20px;
+  border-radius: var(--radius);
   background-color: var(--background);
   margin-bottom: 10px;
   transition: 0.3s;
@@ -271,33 +310,34 @@ p.reco-menu-info{
 
 img.coffeebeans{
   height: 330px;
-  object-fit: cover;}
+  object-fit: cover;
+  border-radius: var(--radius);
+}
 
-.coffeebean-info .max-title h3 em{
+.coffeebean-info{
+  background-color: #fafafa;
+}
+
+.coffeebean-info .sub-title h4{ 
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.coffeebean-info .sub-title h4 em{
   color: var(--gray);
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
-.coffeebean-info .max-title h2{color: var(--primaryColor)}
-
+.coffeebean-info .sub-title h5{
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primaryColor)
+}
 
 /* _____deosup-info_____ */
-.division{
-  position: relative;
-  margin-top: 10px;
-}
-.division::before{
-  content: '';
-  position: absolute;
-  background-color: var(--background);
-  width: 100%;
-  height: 10px;
-  top: -10px;
-  left: 0;
-}
-
 .deosup-info h2{
   text-align: center;
   padding-top: 50px;
@@ -338,52 +378,6 @@ img.coffeebeans{
 }
 
 
-
-/* culture-info */
-section.culture-info{
-  padding: 0px 0;
-}
-.culture-info .culture-title{
-  text-align: center;
-  padding: 20px 0;
-}
-.culture-info .culture-title h2{
-  margin: 10px 0;
-}
-.culture-info .culture-title span{
-  color: var(--gray);
-  font-weight: 300;
-}
-
-section.culture-info .swiper{
-  padding: 5px 20px 50px 20px;
-}
-
-.gotodeosup{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-  padding: 30px 0;
-  margin: 30px 0;
-  background-color: var(--background);
-}
-.gotodeosup .deosup-set{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px
-}
-.gotodeosup .doesup-txt p{
-  font-size: 14px;
-  margin-top: 5px;
-}
-.gotodeosup .deosup-img{
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  overflow: hidden;
-}
 
 
 
