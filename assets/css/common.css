@@ -1,5 +1,5 @@
 @charset "utf-8"; 
-
+html{scroll-behavior: smooth;}
 :root{
   --black: #121212;
 	--gray: #666;
@@ -17,11 +17,11 @@ body::-webkit-scrollbar {
 
 main{
   width: 100%;
-  margin: 90px auto 0;
+  margin: 100px auto 0;
 }
 section{
   width: 100%;
-  padding: 25px 20px;
+  padding: 50px 20px;
 }
 section.full{
   width: 100%;
@@ -54,13 +54,14 @@ a{
 }
 
 .visu-title{
-  padding: 20px;
+  padding: 50px 20px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.visu-title h2{
+.visu-title h3{
+  font-weight: 700;
   margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
@@ -74,17 +75,18 @@ a{
 }
 
 .max-title{
-  padding: 30px 20px 20px 20px;
+  padding: 50px 20px 20px 20px;
   width: 100%;
 }
-.max-title h2{
+.max-title h3{
+  font-weight: 700;
   margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .max-title p{
-  margin-top: 10px;
+  padding-top: 10px;
 }
 
 
@@ -121,7 +123,8 @@ p{
 a.btn{
   display: block;
   text-align: center;
-  width: 388px;
+  width: 100%;
+  max-width: 388px;
   height: 42px;
   line-height: 42px;
   font-size: 16px;
@@ -129,10 +132,33 @@ a.btn{
   border-radius: var(--radius);
   color: #fff;
   background-color: var(--primaryColor);
-  margin: 20px auto;
+  margin: 20px auto 0;
   transition: 0.3s ease-in-out;
 }
 a.btn:hover {
   background: #0a3a1f;
 }
   
+
+/* 탑버튼 */
+#gototop{
+  z-index: 888;
+  position: fixed;
+  bottom: 75px;
+  width: 100%;
+  max-width: 428px;
+  display: flex;
+  justify-content: end;
+  padding: 0 20px;
+}
+.top{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  color: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
